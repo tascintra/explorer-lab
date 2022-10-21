@@ -20,3 +20,10 @@ function setCardType(type) {
 }
 
 globalThis.setCardType = setCardType
+
+// security code
+const securityCode = document.querySelector("#security-code")
+const securityCodePattern = {
+  mask: "000",
+}
+const securityCodeMasked = IMask(securityCode, securityCodePattern)
