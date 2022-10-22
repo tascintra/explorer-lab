@@ -61,7 +61,7 @@ const cardNumberPattern = {
     },
     {
       mask: "0000 0000 0000 0000",
-      regex: /(^5[1-5]\d{0,2}|^22[2-9]\d|^2[3-7]\d{0,2})\d{0,2}/,
+      regex: /^(5[1-5]\d{0,2}|22[2-9]\d{0,1}|2[3-7]\d{0,2})\d{0,12}/,
       cardtype: "mastercard",
     },
     {
@@ -77,8 +77,7 @@ const cardNumberPattern = {
   dispatch: function (appended, dynamicMasked) {
     const number = (dynamicMasked.value + appended).replace(/\D/g, "")
     const findMask = dynamicMasked.compiledMasks.find(({ regex }) => number.match(regex))
-
-    console.log(findMask)
+    
     return findMask
   },
 }
