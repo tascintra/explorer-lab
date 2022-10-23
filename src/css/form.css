@@ -72,7 +72,6 @@ dialog {
   margin: 0 auto;
   width: 20vw;
   height: 15vh;
-  display: flex;
   background: #202024;
   border: 0.1rem solid #323238;
   border-radius: 0.6rem;
@@ -86,6 +85,7 @@ dialog div {
   align-items: center;
   gap: 20px;
   padding: 20px;
+  height: 100%;
 }
 
 dialog button {
