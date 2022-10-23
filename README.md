@@ -47,7 +47,7 @@ Live Site URL: [rocket-pay-tascintra.vercel.app](https://rocket-pay-tascintra.ve
 
 ## ✔️ What I learned
 
-In this project I learned how to use a 3rd part library to create input masks the were used to get credit card information and how to use regular expressions to filter the information.
+In this project I learned how to use a 3rd part library to create input masks the were used to get credit card information and how to use regular expressions to filter this information.
 
 ## 🔖 Layout
 
