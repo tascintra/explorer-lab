@@ -7,6 +7,7 @@ Exclusive and free event, promoted by Rocketseat.
 <p align="center">
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#%EF%B8%8F-what-i-learned">Learned</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
@@ -23,7 +24,7 @@ Exclusive and free event, promoted by Rocketseat.
 
 ## 🚀 Technologies
 
-This project was built with the following technologies:
+This project was built using following technologies:
 
 - HTML
 - CSS
@@ -39,6 +40,10 @@ This project was built with the following technologies:
 ![](.github/rocket-pay.gif)
 
 The Rocketpay project is a component that simulated a credit card form, where it's possible to add input masks and update HTML events through DOM.
+
+## ✔️ What I learned
+
+In this project I learned how to use a 3rd part library to create input masks the were used to get credit card information and how to use regular expressions to filter the information.
 
 ## 🔖 Layout
 
