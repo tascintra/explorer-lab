@@ -35,6 +35,8 @@ This project was built with the following technologies:
 
 ## 💻 Project
 
+![](.github/rocket-pay.gif)
+
 The Rocketpay project is a component that simulated a credit card form, where it's possible to add input masks and update HTML events through DOM.
 
 ## 🔖 Layout
