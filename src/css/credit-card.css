@@ -58,6 +58,10 @@
   align-items: center;
 }
 
+.cc-security .value {
+  width: 4ch;
+}
+
 .cc,
 .cc-logo,
 .cc-number {
