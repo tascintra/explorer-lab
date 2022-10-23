@@ -66,3 +66,52 @@ form button {
 form button:hover {
   filter: brightness(1.1);
 }
+
+dialog {
+  position: absolute;
+  margin: 0 auto;
+  width: 20vw;
+  height: 15vh;
+  display: flex;
+  background: #202024;
+  border: 0.1rem solid #323238;
+  border-radius: 0.6rem;
+}
+
+dialog div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+dialog button {
+  padding: .8rem 0;
+  width: 100%;
+  background: #42d3ff;
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #121212;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+dialog button:hover {
+  filter: brightness(1.1);
+}
+
+dialog p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01px;
+  text-transform: uppercase;
+  color: #e1e1e6;
+  text-align: center;
+}
