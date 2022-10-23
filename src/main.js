@@ -112,6 +112,9 @@ function updateSecurityCode(code) {
 }
 
 cardNumberMasked.on("accept", () => {
+  const cardType = cardNumberMasked.masked.currentMask.cardtype
+  console.log(cardType)
+  setCardType(cardType)
   updateCardNumber(cardNumberMasked.value)
 })
 
