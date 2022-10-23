@@ -29,6 +29,7 @@ This project was built with the following technologies:
 - CSS
 - JavaScript
 - JSON
+- Regex
 - [Node e NPM](https://nodejs.org/)
 - [Vite](https://vitejs.dev/)
 - [iMask](https://imask.js.org)
