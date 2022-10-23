@@ -86,9 +86,20 @@ const cardNumberPattern = {
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern)
 
 const addButton = document.querySelector("#add-card")
-addButton.addEventListener("click", () => {
-  window.alert("Cartão adicionado!")
-})
+addButton.addEventListener("click", verifyEmptyInput)
+
+function verifyEmptyInput() {
+  if (
+    cardNumber.value.length < 16 ||
+    securityCode.value.length < 3 ||
+    expirationDate.value.length < 5 ||
+    cardHolder.value.length === 0
+  ) {
+    window.alert("Preencha os dados e tente novamente")
+  } else {
+    addCardDialog.show()
+  }
+}
 
 document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault()
@@ -129,3 +140,13 @@ function updateExpirationDate(date) {
   const ccExpiration = document.querySelector(".cc-extra .value")
   ccExpiration.innerText = date.length === 0 ? "02/32" : date
 }
+
+const addCardDialog = document.querySelector("#card-dialog")
+const buttonCloseDialog = document.querySelector("#close-dialog")
+
+function closeDialog() {
+  addCardDialog.close()
+  document.location.reload()
+}
+
+buttonCloseDialog.addEventListener("click", closeDialog)
