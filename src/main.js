@@ -76,9 +76,20 @@ const cardNumberPattern = {
   ],
   dispatch: function (appended, dynamicMasked) {
     const number = (dynamicMasked.value + appended).replace(/\D/g, "")
-    const findMask = dynamicMasked.compiledMasks.find(({ regex }) => number.match(regex))
-    
+    const findMask = dynamicMasked.compiledMasks.find(({ regex }) =>
+      number.match(regex)
+    )
+
     return findMask
   },
 }
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern)
+
+const addButton = document.querySelector("#add-card")
+addButton.addEventListener("click", () => {
+  console.log("clicou no botão!")
+})
+
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault()
+})
