@@ -43,7 +43,7 @@ This project was built using following technologies:
 The Rocketpay project is a component that simulated a credit card form, where it's possible to add input masks and update HTML events through DOM.
 
 ## 🌎 Deploy
-Live Site URL: [rocket-pay-tascintra.vercel.app](https://rocket-pay-tascintra.vercel.app/)
+Live Site URL: [rocketpay-tascintra.vercel.app](https://rocketpay-tascintra.vercel.app/)
 
 ## ✔️ What I learned
 
