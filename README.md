@@ -32,6 +32,7 @@ This project was built using following technologies:
 - JavaScript
 - JSON
 - Regex
+- GIT
 - [Node e NPM](https://nodejs.org/)
 - [Vite](https://vitejs.dev/)
 - [iMask](https://imask.js.org)
@@ -40,14 +41,14 @@ This project was built using following technologies:
 
 ![](.github/rocket-pay.gif)
 
-The Rocketpay project is a component that simulated a credit card form, where it's possible to add input masks and update HTML events through DOM.
+The Rocketpay project is a component that simulates a credit card form where it's possible to add input masks and update HTML elements through DOM.
 
 ## 🌎 Deploy
 Live Site URL: [rocketpay-tascintra.vercel.app](https://rocketpay-tascintra.vercel.app/)
 
 ## ✔️ What I learned
 
-In this project I learned how to use a 3rd part library to create input masks the were used to get credit card information and how to use regular expressions to filter this information.
+In this project I learned how to use a 3rd party library to create input masks that were used to get credit card information, how to use regular expressions to filter this information and how to handle dialog boxes for user information messages.
 
 ## 🔖 Layout
 
