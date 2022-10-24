@@ -85,22 +85,6 @@ const cardNumberPattern = {
 }
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern)
 
-const addButton = document.querySelector("#add-card")
-addButton.addEventListener("click", verifyEmptyInput)
-
-function verifyEmptyInput() {
-  if (
-    cardNumber.value.length < 16 ||
-    securityCode.value.length < 3 ||
-    expirationDate.value.length < 5 ||
-    cardHolder.value.length === 0
-  ) {
-    window.alert("Preencha os dados e tente novamente")
-  } else {
-    addCardDialog.show()
-  }
-}
-
 document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault()
 })
@@ -143,6 +127,25 @@ function updateExpirationDate(date) {
 
 const addCardDialog = document.querySelector("#card-dialog")
 const buttonCloseDialog = document.querySelector("#close-dialog")
+const infoDialog = document.querySelector("#info-dialog")
+const buttonCloseInfoDialog = document.querySelector("#close-info-dialog")
+
+
+const addButton = document.querySelector("#add-card")
+addButton.addEventListener("click", verifyEmptyInput)
+
+function verifyEmptyInput() {
+  if (
+    cardNumber.value.length < 16 ||
+    securityCode.value.length < 3 ||
+    expirationDate.value.length < 5 ||
+    cardHolder.value.length === 0
+  ) {
+    infoDialog.show()
+  } else {
+    addCardDialog.show()
+  }
+}
 
 function closeDialog() {
   addCardDialog.close()
@@ -150,3 +153,4 @@ function closeDialog() {
 }
 
 buttonCloseDialog.addEventListener("click", closeDialog)
+buttonCloseInfoDialog.addEventListener("click", () => infoDialog.close())
