@@ -4,6 +4,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <script defer type="module" src="/src/main.js"></script>
+
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/cc-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -158,13 +160,17 @@
         <button id="add-card">ADICIONAR CARTÃO</button>
       </form>
     </div>
-    <dialog id="card-dialog">
+    <dialog class="dialog" id="card-dialog">
       <div>
         <p>Cartão adicionado!</p>
         <button id="close-dialog">Fechar</button>
       </div>
     </dialog>
-
-    <script type="module" src="/src/main.js"></script>
+    <dialog class="dialog" id="info-dialog">
+      <div>
+        <p>Preencha os dados e tente novamente.</p>
+        <button id="close-info-dialog">OK</button>
+      </div>
+    </dialog>
   </body>
 </html>
