@@ -70,7 +70,7 @@ form button:hover {
 .dialog {
   position: absolute;
   margin: 0 auto;
-  width: 20vw;
+  width: 12vw;
   height: 15vh;
   background: #202024;
   border: 0.1rem solid #323238;
@@ -116,6 +116,11 @@ form button:hover {
   text-align: center;
 }
 
+@media (max-width: 1150px) {
+  .dialog {
+    width: 15vw;
+  }
+}
 
 @media (max-width: 690px) {
   .dialog div {
@@ -133,5 +138,6 @@ form button:hover {
 @media (max-width: 475px) {
   .dialog {
     width: 30vw;
+    height: 13vh;
   }
 }
