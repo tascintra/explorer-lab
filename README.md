@@ -1,4 +1,4 @@
-<h1 align="center"> Explorer Lab #01 </h1>
+<h1 align="center"> Rocketpay - Explorer Lab #01 </h1>
 
 <p align="center">
 Exclusive and free event, promoted by Rocketseat.
